@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="it">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400italic,700,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<nav class="top">
+    <ul>
+        <a href="javascript:void (0);" id="help_btn"><li class="help left"><i class="fa fa-question"></i></li></a>
+        <li><a href="javascript:void(0);">Link #1</a></li>
+        <li><a href="javascript:void(0);">Link #2</a></li>
+        <li><a href="javascript:void(0);">Link #3</a></li>
+        <li><a href="javascript:void(0);">Link #4</a></li>
+        <li><a href="javascript:void(0);">Link #5</a></li>
+    </ul>
+</nav>
+<header>
+    <div class="logo left">
+        <img src="img/telecom-italia-logo.png" />
+    </div>
+    <div class="adam right">
+        <img src="img/Adam_logo.png" />
+    </div>
+</header>
+<nav class="side left">
+    <ul>
+        <li><a href="javascript:void(0);">Link #1</a></li>
+        <li><a href="javascript:void(0);">Link #2</a></li>
+        <li><a href="javascript:void(0);">Link #3</a></li>
+        <li><a href="javascript:void(0);">Link #4</a></li>
+        <li><a href="javascript:void(0);">Link #5</a></li>
+        <li><a href="javascript:void(0);">Link #6</a></li>
+        <li><a href="javascript:void(0);">Link #7</a></li>
+        <li><a href="javascript:void(0);">Link #8</a></li>
+    </ul>
+</nav>
+<section class="content-pane right" ng-app>
+    <div class="map-container left">
+        <img id="map" class="map_img" src="img/map.png" />
+        <a id="dot_1" class="dot red tooltips" href="javascript:void(0);"><span>Modena</span></a>
+        <a id="dot_2" class="dot green tooltips" href="javascript:void(0);"><span>Roma</span></a>
+    </div>
+    <div class="popup-box left">
+        <div class="inner-info" id="point_1_info">
+            <p><b>Nome:</b> Punto 1</p>
+            <p><b>Stato:</b> Non funzionante</p>
+            <p><b>Ultimo Intervento:</b> 23/10/2014</p>
+            <p><b>IP:</b> 8.8.8.8</p>
+        </div>
+        <div class="inner-info" id="point_2_info">
+            <p><b>Nome:</b> Punto 2</p>
+            <p><b>Stato:</b> Funzionante</p>
+            <p><b>Ultimo Intervento:</b> 12/02/2015</p>
+            <p><b>IP:</b> 8.8.4.4</p>
+        </div>
+    </div>
+    <div class="summary-box right">
+        <ul>
+            <li class="not_working" id="tab_1">
+                <div>
+                    <p>Punto 1</p>
+                    <p>8.8.8.8</p>
+                </div>
+            </li>
+            <li class="working" id="tab_2">
+                <div>
+                    <p>Punto 2</p>
+                    <p>8.8.4.4</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <br class="clear" />
+</section>
+<footer class="clear">
+
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+"coordinate"{
+    "lazio":{
+        "id":"1",
+        "name":"Roma",
+        "status":"working",
+        "lat":44.6667,
+        "long":10.9167
+    },
+    "emilia":{
+        "id":"2",
+        "name":"Modena",
+        "status":"noworking",
+        "lat":41.9000,
+        "long":12.4833
+    }
+}

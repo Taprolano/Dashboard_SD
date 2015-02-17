@@ -1,0 +1,39 @@
+<html>
+<head>
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+        google.load('visualization', '1', {'packages': ['geomap']});
+        google.setOnLoadCallback(drawMap);
+
+        function drawMap() {
+            var data = google.visualization.arrayToDataTable([
+                ['City', 'Popularity'],
+                ['Rome', 200],
+                ['Naples', 300],
+                ['Milan', 400]
+            ]);
+
+            var options = {};
+            options['dataMode'] = 'regions';
+            options['region'] = 'IT';
+            options['colors'] = [0xbaecc7, 0x3bc75f]; // light to dark green
+            options['width'] = '2000px';
+            options['height'] = '1600px';
+
+            var container = document.getElementById('map_canvas');
+            var geomap = new google.visualization.GeoMap(container);
+            options['width'] = '4000px';
+            options['height'] = '3200px';
+            geomap.draw(data, options);
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+<div id='map_canvas'></div>
+</body>
+
+</html>
